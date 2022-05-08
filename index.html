@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Polsce</title>
+	<meta name="description" content="Polsce. Portal dla ludzi, którzy poważnie myślą o Polsce." />
+	<meta name="keywords" content="Polska, Polacy, obywatle, rozdawnictwo, lgbt, Polsce, zmiany, rząd" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Square+Peg&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	
+</head>
+
+<body onmousedown="return false" onselectstart="return false">
+	
+        <div></div>
+		<div class="logo">
+			<h1>Polsce <span style="color: red;">- portal dla ludzi, którzy na poważnie myślą o Polsce</span></h1>
+		</div>
+		
+		<div id="container">
+		
+			<div id="menu" style="float:left;">
+				
+				<h3>MENU</h3>
+				
+				<ol>
+				
+					<a href="#"><li class="selected">O stronie</li></a>
+					<a href="#"><li>Postulaty</a>
+					
+						<ul>
+							<a href="#"><li>Rozdawnictwo</li></a>
+							<a href="#"><li>Podatki
+								<ol>
+									<a href="#"><li>Działalność gospodarcza</li></a>
+									<a href="#"><li>Opodatkowanie pracy</li></a>
+									<a href="#"><li>Ogólnie</li></a>
+								</ol>
+							</li></a>
+							<a href="views.html" class="tilelink"><li>Poglądy
+								<ol>
+									<a href="citizenshi_renunciation.html" class="tilelink"><li>Zrzeczenie się obywatelstwa polskiego</li></a>
+								</ol>
+							</li></a>
+							
+						</ul>
+		
+					</li>
+					<a href="#"><li>Kontakt</li></a>
+				
+				</ol>
+			
+			</div>
+			
+			<div id="content" style="float:left;">
+				<h1>Polska naszym domem.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis eros vitae velit efficitur lacinia. Curabitur malesuada et massa sit amet suscipit. Aliquam nec libero hendrerit, fermentum odio vestibulum, rhoncus nisl. Ut lobortis massa ut mi porttitor tincidunt. Cras ultricies condimentum mi, vel gravida neque consectetur eget. Integer cursus metus at rhoncus rutrum. Cras scelerisque urna quis lorem pretium, consectetur hendrerit ante sagittis. Quisque metus lorem, lobortis in nibh non, placerat bibendum sapien. Donec aliquet metus dolor, at interdum sapien convallis vitae.</p>
+
+				<p>Duis eros ipsum, sagittis a nibh aliquet, fermentum interdum odio. Nam sit amet augue quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non erat dapibus, finibus tortor sit amet, lacinia augue. Nulla luctus sagittis leo, et porttitor sem blandit et. Integer quis sapien dictum, posuere tortor ac, vulputate lectus. Aenean interdum nisi ac vehicula dignissim. Donec non tempor ante. Etiam aliquam mi id dolor efficitur porta.</p>
+				
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis eros vitae velit efficitur lacinia. Curabitur malesuada et massa sit amet suscipit. Aliquam nec libero hendrerit, fermentum odio vestibulum, rhoncus nisl. Ut lobortis massa ut mi porttitor tincidunt. Cras ultricies condimentum mi, vel gravida neque consectetur eget. Integer cursus metus at rhoncus rutrum. Cras scelerisque urna quis lorem pretium, consectetur hendrerit ante sagittis. Quisque metus lorem, lobortis in nibh non, placerat bibendum sapien. Donec aliquet metus dolor, at interdum sapien convallis vitae.</p>
+
+				<p>Duis eros ipsum, sagittis a nibh aliquet, fermentum interdum odio. Nam sit amet augue quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non erat dapibus, finibus tortor sit amet, lacinia augue. Nulla luctus sagittis leo, et porttitor sem blandit et. Integer quis sapien dictum, posuere tortor ac, vulputate lectus. Aenean interdum nisi ac vehicula dignissim. Donec non tempor ante. Etiam aliquam mi id dolor efficitur porta.</p>
+				
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis eros vitae velit efficitur lacinia. Curabitur malesuada et massa sit amet suscipit. Aliquam nec libero hendrerit, fermentum odio vestibulum, rhoncus nisl. Ut lobortis massa ut mi porttitor tincidunt. Cras ultricies condimentum mi, vel gravida neque consectetur eget. Integer cursus metus at rhoncus rutrum. Cras scelerisque urna quis lorem pretium, consectetur hendrerit ante sagittis. Quisque metus lorem, lobortis in nibh non, placerat bibendum sapien. Donec aliquet metus dolor, at interdum sapien convallis vitae.</p>
+
+				<p>Duis eros ipsum, sagittis a nibh aliquet, fermentum interdum odio. Nam sit amet augue quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non erat dapibus, finibus tortor sit amet, lacinia augue. Nulla luctus sagittis leo, et porttitor sem blandit et. Integer quis sapien dictum, posuere tortor ac, vulputate lectus. Aenean interdum nisi ac vehicula dignissim. Donec non tempor ante. Etiam aliquam mi id dolor efficitur porta.</p>
+
+
+			</div>
+			
+			<div style="clear:both;"></div>
+			
+			<footer>Wszelkie prawa zastrzeżone. &copy 2022</footer>
+		
+		</div>
+		
+		<script src="min.js"></script>
+		
+		<script>
+
+	$(document).ready(function() {
+	let NavY = $('.logo').offset().top;
+	 
+	let stickyNav = function(){
+	let ScrollY = $(window).scrollTop(); 
+		  
+	/*if (ScrollY > 0) { 
+		$('.logo').addClass('sticky');
+	} else {
+		$('.logo').removeClass('sticky'); 
+	} */
+
+	$('.logo').toggleClass('sticky', ScrollY >1);
+	}
+	 
+	stickyNav();  
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+
+
+</body>
+</html>
